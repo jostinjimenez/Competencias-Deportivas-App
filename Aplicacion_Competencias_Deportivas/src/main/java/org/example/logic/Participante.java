@@ -1,4 +1,3 @@
 package org.example.logic;
-
-public abstract class Participante {
+public abstract class Participante{
 }
