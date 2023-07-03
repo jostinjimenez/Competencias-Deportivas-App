@@ -11,7 +11,14 @@ public class Partido {
     private List<Participante> participantes;
     private EstadoPartido estado;
     private String resultado;
+<<<<<<< HEAD
     private Marcador marcador;
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
+>>>>>>> master
 
     //getters y setters
     public Date getFecha() {
