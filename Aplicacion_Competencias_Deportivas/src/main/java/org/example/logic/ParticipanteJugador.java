@@ -1,4 +1,4 @@
 package org.example.logic;
 
-public class ParticipanteJugador {
+public class ParticipanteJugador extends Participante{
 }
