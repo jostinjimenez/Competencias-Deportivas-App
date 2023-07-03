@@ -4,8 +4,6 @@ public class InscripcionEquipo extends Inscripcion{
     //relaciones
     private Equipo equipo;
 
-<<<<<<< HEAD
-=======
     //constructores
     public InscripcionEquipo(Equipo equipo, Deporte deporte, Temporada temporada) {
         super(deporte, temporada);
@@ -26,5 +24,4 @@ public class InscripcionEquipo extends Inscripcion{
     public String toString() {
         return "InscripcionEquipo{" + "equipo=" + equipo + '}';
     }
->>>>>>> master
 }
