@@ -1,16 +1,16 @@
 package org.example.logic;
 
 public class InscripcionJugador extends Inscripcion {
-    //relaciones
+    // relaciones
     private Jugador jugador;
 
-    //constructores
+    // constructores
     public InscripcionJugador(Jugador jugador, Deporte deporte, Temporada temporada) {
         super(deporte, temporada);
         this.jugador = jugador;
     }
 
-    //getters y setters
+    // getters y setters
 
     public Jugador getJugador() {
         return jugador;

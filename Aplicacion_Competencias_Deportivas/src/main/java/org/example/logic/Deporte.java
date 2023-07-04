@@ -1,23 +1,31 @@
 package org.example.logic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Deporte{
+
     //Atributos
+
     private String nombre;
     private TipoDeporte tipoDeporte;
-    private List<Categoria> categoriaList;
+    private Categoria categoria;
 
     //Relaciones
 
 
     //Constructor
-
+    public Deporte(String nombre, TipoDeporte tipoDeporte, Categoria categoria) {
+        this.nombre = nombre;
+        this.tipoDeporte = tipoDeporte;
+        this.categoria = categoria;
+    }
 
     //Metodos
 
 
     //Getters y Setters
+
     public String getNombre() {
         return nombre;
     }
@@ -34,14 +42,13 @@ public abstract class Deporte{
         this.tipoDeporte = tipoDeporte;
     }
 
-    public List<Categoria> getCategoriaList() {
-        return categoriaList;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setCategoriaList(List<Categoria> categoriaList) {
-        this.categoriaList = categoriaList;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
-
 
     //Metodos adicionales
 
@@ -49,4 +56,12 @@ public abstract class Deporte{
     //toString
 
 
+    @Override
+    public String toString() {
+        return "Deporte{" +
+                "nombre='" + nombre + '\'' +
+                ", tipoDeporte=" + tipoDeporte +
+                ", categoria=" + categoria +
+                '}';
+    }
 }

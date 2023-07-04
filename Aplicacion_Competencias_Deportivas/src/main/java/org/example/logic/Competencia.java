@@ -1,5 +1,5 @@
 package org.example.logic;
-
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,11 +14,10 @@ public class Competencia {
     //Constructor
 
 
-    public Competencia(int id, List<Deporte> deporteList, List<Temporada> temporadaList) {
+    public Competencia(String nombre) {
         this.nombre = nombre;
-        this.deporteList = new LinkedList<Deporte>() {
-        };
-        this.temporadaList = new LinkedList<Temporada>();
+        this.deporteList = new ArrayList<Deporte>();
+        this.temporadaList = new ArrayList<Temporada>();
     }
 
     //Metodos
@@ -26,8 +25,12 @@ public class Competencia {
         deporteList.add(deporte);
     }
 
-    public Temporada crearTemporada() {
-        return new Temporada();
+
+    public Temporada crearTemporada(int anio) {
+        Temporada temporada = new Temporada(anio);
+        temporadaList.add(temporada);
+        temporada.setAnio(anio);
+        return temporada;
     }
 
     //Getters y Setters
@@ -60,6 +63,12 @@ public class Competencia {
     //Metodos adicionales
 
     //toString
-
+    public String toString() {
+        return "Competencia{" +
+                "nombre='" + nombre + '\'' +
+                ", deporteList=" + deporteList +
+                ", temporadaList=" + temporadaList +
+                '}';
+    }
 
 }

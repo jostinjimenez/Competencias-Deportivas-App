@@ -3,20 +3,29 @@ package org.example.logic;
 import java.util.Date;
 import java.util.List;
 
+<<<<<<< HEAD
+public class Partido  {
+
+
+=======
 public class Partido {
     private List<Pronostico> pronosticoList;
     private List<EstadisticaJugador> estadisticaJugadorList;
     private List<EstadisticaEquipo> estadisticaEquipoList;
+>>>>>>> master
     //relaciones
     private Date fecha;
     private String grupo;
     private Deporte deporte;
-    private List<Participante> participantes;
     private EstadoPartido estado;
     private String resultado;
-   //
-    // private Marcador marcador;
+<<<<<<< HEAD
+=======
 
+    public enum EstadoPartido {
+        PENDIENTE, JUGADO, SUSPENDIDO
+    }
+>>>>>>> master
 
     //getters y setters
     public Date getFecha() {
@@ -43,13 +52,6 @@ public class Partido {
         this.deporte = deporte;
     }
 
-    public List<Participante> getParticipantes() {
-        return participantes;
-    }
-
-    public void setParticipantes(List<Participante> participantes) {
-        this.participantes = participantes;
-    }
 
     public EstadoPartido getEstado() {
         return estado;
@@ -88,7 +90,7 @@ public class Partido {
 
     //metodos
     public void agregarParticipante(Participante participante) {
-        // Agregar lógica para agregar un participante al partido
+        participantes.add(participante);
     }
 
     @Override
