@@ -1,6 +1,8 @@
 package org.example.logic;
 
 public class EstadisticaEquipo {
+    private Partido partido;
+
     // atributos
     private String nombreEquipo;
     private int partidosJugados;
