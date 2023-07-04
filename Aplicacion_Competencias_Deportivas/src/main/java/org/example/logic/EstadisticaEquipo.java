@@ -10,6 +10,15 @@ public class EstadisticaEquipo {
     private int partidosEmpatados;
     private int partidosPerdidos;
     private int puntos;
+    // constructor
+    public EstadisticaEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
+        this.partidosJugados = 0;
+        this.partidosGanados = 0;
+        this.partidosEmpatados = 0;
+        this.partidosPerdidos = 0;
+        this.puntos = 0;
+    }
     // getters y setters
     public String getNombreEquipo() {
         return nombreEquipo;
@@ -50,6 +59,8 @@ public class EstadisticaEquipo {
 
     //metodos
     public void calcularEstadisticaEquipo(Partido partido) {
+        this.partido = partido;
+        this.partidosJugados++;
 
     }
 }
