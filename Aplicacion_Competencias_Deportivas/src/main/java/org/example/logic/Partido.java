@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Partido {
+    private List<Pronostico> pronosticoList;
+    private List<EstadisticaJugador> estadisticaJugadorList;
+    private List<EstadisticaEquipo> estadisticaEquipoList;
     //relaciones
     private Date fecha;
     private String grupo;
