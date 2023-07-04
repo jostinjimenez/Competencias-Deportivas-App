@@ -3,7 +3,9 @@ package org.example.logic;
 import java.util.List;
 
 public abstract class Deporte{
+
     //Atributos
+
     private String nombre;
     private TipoDeporte tipoDeporte;
     private List<Categoria> categoriaList;
