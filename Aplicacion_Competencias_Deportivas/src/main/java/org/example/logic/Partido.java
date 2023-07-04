@@ -16,6 +16,9 @@ public class Partido  {
     private EstadoPartido estado;
     private String resultado;
 
+    private Equipo equipoLocal;
+    private Equipo equipoVisitante;
+
     public enum EstadoPartido {
         PENDIENTE, JUGADO, SUSPENDIDO
     }

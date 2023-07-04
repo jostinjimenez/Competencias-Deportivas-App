@@ -9,6 +9,8 @@ public class Temporada {
     private List<Inscripcion> inscripcionList;
     private List<Partido> partidoList;
 
+    private List<Modalidad> maodalidadList;
+
     // getters y setters
     public int getAnio() {
         return anio;
