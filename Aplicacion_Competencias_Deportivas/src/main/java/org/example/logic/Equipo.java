@@ -1,45 +1,55 @@
 package org.example.logic;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equipo {
     //relaciones
     private String nombre;
-    private List<Jugador> jugadores;
-    private List<Partido> partidos;
+    private List<Jugador> jugadorList;
+    private List<Partido> partidoList;
 
     //getters y setters
-    public String getNombre() {
-        return nombre;
+
+
+    //constructores
+    public Equipo(String nombre, List<Jugador> jugadorList, List<Partido> partidoList) {
+        this.nombre = nombre;
+        this.jugadorList = new ArrayList<Jugador>();
+        this.partidoList = new ArrayList<Partido>();
     }
 
-    public List<Jugador> getJugadores() {
-        return jugadores;
+    //metodos
+
+    public void agregarJugador(Jugador jugador) {
+        jugadorList.add(jugador);
+    }
+
+    public void agregarPartido(Partido partido) {
+    }
+
+
+    public String getNombre() {
+        return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setJugadores(List<Jugador> jugadores) {
-        this.jugadores = jugadores;
+    public List<Jugador> getJugadorList() {
+        return jugadorList;
     }
 
-    public List<Partido> getPartidos() {
-        return partidos;
+    public void setJugadorList(List<Jugador> jugadorList) {
+        this.jugadorList = jugadorList;
     }
 
-    public void setPartidos(List<Partido> partidos) {
-        this.partidos = partidos;
+    public List<Partido> getPartidoList() {
+        return partidoList;
     }
 
-    //metodos
-
-    public void agregarJugador(Jugador jugador) {
-        jugadores.add(jugador);
-    }
-
-    public void agregarPartido(Partido partido) {
-        partidos.add(partido);
+    public void setPartidoList(List<Partido> partidoList) {
+        this.partidoList = partidoList;
     }
 }
 
