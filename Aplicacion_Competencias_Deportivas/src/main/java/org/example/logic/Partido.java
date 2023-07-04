@@ -11,12 +11,10 @@ public class Partido {
     private List<Participante> participantes;
     private EstadoPartido estado;
     private String resultado;
-<<<<<<< HEAD
-=======
-   //
-    // private Marcador marcador;
 
->>>>>>> master
+    public enum EstadoPartido {
+        PENDIENTE, JUGADO, SUSPENDIDO
+    }
 
     //getters y setters
     public Date getFecha() {
@@ -88,7 +86,7 @@ public class Partido {
 
     //metodos
     public void agregarParticipante(Participante participante) {
-        // Agregar lógica para agregar un participante al partido
+        participantes.add(participante);
     }
 
     @Override
