@@ -4,7 +4,10 @@ public class InscripcionEquipo extends Inscripcion{
     //relaciones
     private Equipo equipo;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     //constructores
     public InscripcionEquipo(Deporte deporte, Temporada temporada, Equipo equipo) {
         super(deporte, temporada);
