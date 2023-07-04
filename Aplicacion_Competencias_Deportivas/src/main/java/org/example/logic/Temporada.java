@@ -41,10 +41,6 @@ public class Temporada {
         this.partidoList = new ArrayList<>();
     }
 
-    public Temporada() {
-        this.inscripcionList = new ArrayList<>();
-        this.partidoList = new ArrayList<>();
-    }
 
     // metodos
     public void inscribirEquipo(Equipo equipo) {

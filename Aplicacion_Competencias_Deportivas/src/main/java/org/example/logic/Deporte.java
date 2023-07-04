@@ -25,6 +25,7 @@ public abstract class Deporte{
 
 
     //Getters y Setters
+
     public String getNombre() {
         return nombre;
     }
@@ -41,14 +42,13 @@ public abstract class Deporte{
         this.tipoDeporte = tipoDeporte;
     }
 
-    public List<Categoria> getCategoriaList() {
-        return categoriaList;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setCategoriaList(List<Categoria> categoriaList) {
-        this.categoriaList = categoriaList;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
-
 
     //Metodos adicionales
 
@@ -56,4 +56,12 @@ public abstract class Deporte{
     //toString
 
 
+    @Override
+    public String toString() {
+        return "Deporte{" +
+                "nombre='" + nombre + '\'' +
+                ", tipoDeporte=" + tipoDeporte +
+                ", categoria=" + categoria +
+                '}';
+    }
 }

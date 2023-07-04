@@ -8,7 +8,8 @@ public class DeporteEquipo extends Deporte{
 
     //Constructor
 
-    public DeporteEquipo(int jugadoresPorEquipo) {
+    public DeporteEquipo(String nombre, TipoDeporte tipoDeporte, Categoria categoria, int jugadoresPorEquipo) {
+        super(nombre, tipoDeporte, categoria);
         this.jugadoresPorEquipo = jugadoresPorEquipo;
     }
 
@@ -29,4 +30,12 @@ public class DeporteEquipo extends Deporte{
     //Metodos adicionales
 
     //toString
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "DeporteEquipo{" +
+                "jugadoresPorEquipo=" + jugadoresPorEquipo +
+                '}';
+    }
 }

@@ -27,9 +27,10 @@ public class Competencia {
     }
 
 
-    public Temporada crearTemporada() {
-        Temporada temporada = new Temporada();
+    public Temporada crearTemporada(int anio) {
+        Temporada temporada = new Temporada(anio);
         temporadaList.add(temporada);
+        temporada.setAnio(anio);
         return temporada;
     }
 
@@ -63,6 +64,12 @@ public class Competencia {
     //Metodos adicionales
 
     //toString
-
+    public String toString() {
+        return "Competencia{" +
+                "nombre='" + nombre + '\'' +
+                ", deporteList=" + deporteList +
+                ", temporadaList=" + temporadaList +
+                '}';
+    }
 
 }
