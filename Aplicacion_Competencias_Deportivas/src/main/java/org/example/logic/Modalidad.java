@@ -6,5 +6,6 @@ public class Modalidad {
     private String descripcion;
     //relaciones
     private Temporada temporada;
+    private TipoModalidad tipoModalidad;
 
 }
