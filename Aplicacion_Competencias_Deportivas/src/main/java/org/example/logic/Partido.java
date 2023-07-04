@@ -11,10 +11,6 @@ public class Partido {
     private List<Participante> participantes;
     private EstadoPartido estado;
     private String resultado;
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 
     //getters y setters
     public Date getFecha() {

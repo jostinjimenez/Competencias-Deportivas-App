@@ -12,7 +12,11 @@ public abstract class Deporte{
 
 
     //Constructor
-
+    public Deporte(String nombre, TipoDeporte tipoList, List<Categoria> categoriaList) {
+        this.nombre = nombre;
+        this.tipoDeporte = tipoList;
+        this.categoriaList = categoriaList;
+    }
 
     //Metodos
 

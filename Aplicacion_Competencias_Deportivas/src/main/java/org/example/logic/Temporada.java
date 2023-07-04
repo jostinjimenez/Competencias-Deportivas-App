@@ -1,20 +1,21 @@
 package org.example.logic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Temporada {
     //relaciones
-    private int numero;
+    private int anio;
     private List<Inscripcion> inscripciones;
     private List<Partido> partidos;
 
     //getters y setters
     public int getNumero() {
-        return numero;
+        return anio;
     }
 
     public void setNumero(int numero) {
-        this.numero = numero;
+        this.anio = numero;
     }
 
     public List<Inscripcion> getInscripciones() {
@@ -34,24 +35,36 @@ public class Temporada {
     }
 
     //constructores
-    public Temporada(int numero, List<Inscripcion> inscripciones, List<Partido> partidos) {
-        this.numero = numero;
-        this.inscripciones = inscripciones;
-        this.partidos = partidos;
+    public Temporada(int anio) {
+        this.anio = anio;
+        this.inscripciones = new ArrayList<>();
+        this.partidos = new ArrayList<>();
     }
+
+    public Temporada() {
+        this.inscripciones = new ArrayList<>();
+        this.partidos = new ArrayList<>();
+    }
+
 
     //metodos
     public void inscribirEquipo(Equipo equipo) {
-
+        InscripcionEquipo inscripcion = new InscripcionEquipo(equipo.getNombre());
+        inscripciones.add(inscripcion);
     }
+
+
     public void inscribirJugador(Jugador jugador) {
-
+        InscripcionJugador inscripcion = new InscripcionJugador(jugador);
+        inscripciones.add(inscripcion);
     }
+
     public void crearPartidos() {
+        // Lógica para crear los partidos de la temporada
     }
 
     @Override
     public String toString() {
-        return "Temporada{" + "numero=" + numero + ", inscripciones=" + inscripciones + ", partidos=" + partidos + '}';
+        return "Temporada{" + "numero=" + anio + ", inscripciones=" + inscripciones + ", partidos=" + partidos + '}';
     }
 }
