@@ -11,14 +11,9 @@ public class Partido {
     private List<Participante> participantes;
     private EstadoPartido estado;
     private String resultado;
-<<<<<<< HEAD
-    private Marcador marcador;
-=======
-<<<<<<< HEAD
+   //
+    // private Marcador marcador;
 
-=======
->>>>>>> master
->>>>>>> master
 
     //getters y setters
     public Date getFecha() {
@@ -69,13 +64,13 @@ public class Partido {
         this.resultado = resultado;
     }
 
-    public Marcador getMarcador() {
+    /*public Marcador getMarcador() {
         return marcador;
-    }
+    }*/
 
-    public void setMarcador(Marcador marcador) {
+   /* public void setMarcador(Marcador marcador) {
         this.marcador = marcador;
-    }
+    }*/
 
     //constructores
     public Partido(Date fecha, String grupo, Deporte deporte, List<Participante> participantes, EstadoPartido estado, String resultado) {
@@ -85,7 +80,7 @@ public class Partido {
         this.participantes = participantes;
         this.estado = estado;
         this.resultado = resultado;
-        this.marcador = new Marcador();
+        //this.marcador = new Marcador();
     }
 
     //metodos

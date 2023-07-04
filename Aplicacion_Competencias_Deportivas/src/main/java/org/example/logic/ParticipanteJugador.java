@@ -1,9 +1,13 @@
 package org.example.logic;
 
 public class ParticipanteJugador extends Participante{
-    private Equipo equipo;
+    private Jugador jugador;
 
-    public Equipo getEquipo() {
-        return equipo;
+    public Jugador getJugador() {
+        return jugador;
+    }
+
+    public void setJugador(Jugador jugador) {
+        this.jugador = jugador;
     }
 }
