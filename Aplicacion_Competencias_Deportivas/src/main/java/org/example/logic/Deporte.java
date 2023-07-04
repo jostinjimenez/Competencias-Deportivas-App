@@ -1,5 +1,6 @@
 package org.example.logic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Deporte{
@@ -8,13 +9,17 @@ public abstract class Deporte{
 
     private String nombre;
     private TipoDeporte tipoDeporte;
-    private List<Categoria> categoriaList;
+    private Categoria categoria;
 
     //Relaciones
 
 
     //Constructor
-
+    public Deporte(String nombre, TipoDeporte tipoDeporte, Categoria categoria) {
+        this.nombre = nombre;
+        this.tipoDeporte = tipoDeporte;
+        this.categoria = categoria;
+    }
 
     //Metodos
 

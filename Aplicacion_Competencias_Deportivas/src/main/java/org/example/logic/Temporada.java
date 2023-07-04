@@ -1,57 +1,67 @@
 package org.example.logic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Temporada {
-    //relaciones
-    private int numero;
-    private List<Inscripcion> inscripciones;
-    private List<Partido> partidos;
+    // relaciones
+    private int anio;
+    private List<Inscripcion> inscripcionList;
+    private List<Partido> partidoList;
 
-    //getters y setters
-    public int getNumero() {
-        return numero;
+    // getters y setters
+    public int getAnio() {
+        return anio;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 
-    public List<Inscripcion> getInscripciones() {
-        return inscripciones;
+    public List<Inscripcion> getInscripcionList() {
+        return inscripcionList;
     }
 
-    public void setInscripciones(List<Inscripcion> inscripciones) {
-        this.inscripciones = inscripciones;
+    public void setInscripcionList(List<Inscripcion> inscripcionList) {
+        this.inscripcionList = inscripcionList;
     }
 
-    public List<Partido> getPartidos() {
-        return partidos;
+    public List<Partido> getPartidoList() {
+        return partidoList;
     }
 
-    public void setPartidos(List<Partido> partidos) {
-        this.partidos = partidos;
+    public void setPartidoList(List<Partido> partidoList) {
+        this.partidoList = partidoList;
     }
 
-    //constructores
-    public Temporada(int numero, List<Inscripcion> inscripciones, List<Partido> partidos) {
-        this.numero = numero;
-        this.inscripciones = inscripciones;
-        this.partidos = partidos;
+    // constructores
+    public Temporada(int anio) {
+        this.anio = anio;
+        this.inscripcionList = new ArrayList<>();
+        this.partidoList = new ArrayList<>();
     }
 
-    //metodos
+    public Temporada() {
+        this.inscripcionList = new ArrayList<>();
+        this.partidoList = new ArrayList<>();
+    }
+
+    // metodos
     public void inscribirEquipo(Equipo equipo) {
 
     }
+
     public void inscribirJugador(Jugador jugador) {
 
     }
+
+
     public void crearPartidos() {
+
     }
 
     @Override
     public String toString() {
-        return "Temporada{" + "numero=" + numero + ", inscripciones=" + inscripciones + ", partidos=" + partidos + '}';
+        return "Temporada{" + "numero=" + anio + ", inscripciones=" + inscripcionList + ", partidos=" + partidoList + '}';
     }
 }

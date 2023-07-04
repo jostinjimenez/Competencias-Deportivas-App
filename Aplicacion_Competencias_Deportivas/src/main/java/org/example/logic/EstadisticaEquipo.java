@@ -1,6 +1,8 @@
 package org.example.logic;
 
 public class EstadisticaEquipo {
+    private Partido partido;
+
     // atributos
     private String nombreEquipo;
     private int partidosJugados;
@@ -48,13 +50,6 @@ public class EstadisticaEquipo {
 
     //metodos
     public void calcularEstadisticaEquipo(Partido partido) {
-        partidosJugados++;
-        if(partido.getReltado() == Resultado.GANADO){
-            partidosGanados++;
-        } else if(partido.getReltado() == Resultado.EMPATADO){
-            partidosEmpatados++;
-        } else {
-            partidosPerdidos++;
-        }
+
     }
 }

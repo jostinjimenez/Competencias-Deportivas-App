@@ -1,17 +1,17 @@
 package org.example.logic;
 
 public abstract class Inscripcion {
-    //relaciones
+    // relaciones
     private Deporte deporte;
     private Temporada temporada;
 
-    //constructores
+    // constructores
     public Inscripcion(Deporte deporte, Temporada temporada) {
         this.deporte = deporte;
         this.temporada = temporada;
     }
 
-    //getters y setters
+    // getters y setters
 
     public Deporte getDeporte() {
         return deporte;
