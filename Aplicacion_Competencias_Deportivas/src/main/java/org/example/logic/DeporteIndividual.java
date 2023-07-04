@@ -4,7 +4,6 @@ import java.util.List;
 
 public class DeporteIndividual extends Deporte{
     //Atributos
-    private int jugadoresPorPartido;
 
     //Relaciones
     private Equipo equipo;
@@ -12,9 +11,8 @@ public class DeporteIndividual extends Deporte{
 
 
     //Constructor
-    public DeporteIndividual(String nombre, TipoDeporte tipoDeporte, Categoria categoria, int jugadoresPorPartido) {
+    public DeporteIndividual(String nombre, TipoDeporte tipoDeporte, Categoria categoria) {
         super(nombre, tipoDeporte, categoria);
-        this.jugadoresPorPartido = jugadoresPorPartido;
     }
 
 
@@ -28,4 +26,13 @@ public class DeporteIndividual extends Deporte{
 
     //toString
 
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "DeporteIndividual{" +
+                "equipo=" + equipo +
+                ", categoria=" + categoria +
+                '}';
+    }
 }
